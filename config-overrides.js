@@ -1,8 +1,8 @@
 module.exports = {
   webpack: function (config, env) {
-    if (process.env.MODE_TYPE === "development") {
+    if (env.MODE_TYPE === "dev") {
       config.mode = "development";
-    } else if (process.env.MODE_TYPE === "production") {
+    } else if (env.MODE_TYPE === "prod") {
       config.mode = "production";
     }
     return config;
