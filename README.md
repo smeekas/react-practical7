@@ -1,7 +1,7 @@
 # react-practical-7
 
 ## user list app 
-
+### hosted on netlify: https://semolina.netlify.app/
 ## Getting Started
 
 1. Setup React
