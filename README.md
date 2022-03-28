@@ -1,4 +1,4 @@
-# react-practical-6
+# react-practical-7
 
 ## user list app 
 
@@ -9,13 +9,13 @@
 2. Clone the repo</br>
 
 ```sh
-  git clone https://github.com/smeekas/react-practical6/
+  git clone https://github.com/smeekas/react-practical7/
 ```
 
 3. change directory</br>
 
 ```sh
-  cd ./react-practical6
+  cd ./react-practical7
 ```
 
 4. Install dependency</br>
