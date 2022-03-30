@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-practical7/static/css/main.28147c90.css",
+    "main.js": "/react-practical7/static/js/main.c2e656cf.js",
+    "index.html": "/react-practical7/index.html",
+    "main.28147c90.css.map": "/react-practical7/static/css/main.28147c90.css.map",
+    "main.c2e656cf.js.map": "/react-practical7/static/js/main.c2e656cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28147c90.css",
+    "static/js/main.c2e656cf.js"
+  ]
+}
