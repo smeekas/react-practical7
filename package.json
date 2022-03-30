@@ -1,4 +1,5 @@
 {
+  "homepage":"https://smeekas.github.io/react-practical7",
   "name": "practical5",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
     "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
     "framer-motion": "^6.2.8",
     "react": "^17.0.2",
     "react-app-rewired": "^2.2.1",
@@ -20,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-app-rewired start cross-env MODE_TYPE=dev",
     "build": "react-app-rewired build cross-env MODE_TYPE=prod",
     "test": "react-app-rewired test",
@@ -42,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

@@ -1,13 +1,15 @@
 import { paginationActionTypes } from "../actionTypes/paginationActionTypes";
 import { uiActionTypes } from "../actionTypes/uiActionTypes";
 import { userActionTypes } from "../actionTypes/userActionTypes";
+import axios from "axios";
 export const fetchUserPageChanged = (perPage) => {
   return async (dispatch) => {
     dispatch({ type: uiActionTypes.LOADING });
-    const response = await fetch(
-      `https://reqres.in/api/users?page=1&per_page=${perPage}`
+    const response = await axios.get(
+      `${process.env.REACT_APP_API}?page=1&per_page=${perPage}`
     );
-    const data = await response.json();
+
+    const data = response.data;
     dispatch({
       type: paginationActionTypes.ADD_PAGINATION,
       currentPage: data.page,
