@@ -23,13 +23,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired start cross-env MODE_TYPE=dev",
-    "build": "react-app-rewired build cross-env MODE_TYPE=prod",
-    "test": "react-app-rewired test",
+    "start": "react-scripts start cross-env MODE_TYPE=dev",
+    "build": "react-scripts build cross-env MODE_TYPE=prod",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:development": "env-cmd -f .env.development react-app-rewired start",
-    "build:staging": "env-cmd -f .env.staging react-app-rewired build",
-    "build:production": "env-cmd -f .env.production react-app-rewired build"
+    "start:dev": "env-cmd -f .env.development react-scripts start",
+    "build:staging": "env-cmd -f .env.staging react-scripts build",
+    "build:production": "env-cmd -f .env.production react-scripts build"
   },
   "eslintConfig": {
     "extends": [

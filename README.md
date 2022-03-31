@@ -1,9 +1,10 @@
 # react-practical-7
 
 ## user list app 
-### hosted on netlify: https://semolina.netlify.app/
-### hosed on heroku: https://semolina.herokuapp.com/
-### hosted on render: https://semolina.onrender.com/
+#### I have used axios for http request and used env variables for development, staging, production environment and also deployed on 3 different hosting services. Here is the list..
+1 hosted on netlify: https://semolina.netlify.app/
+2 hosed on heroku: https://semolina.herokuapp.com/
+3 hosted on render: https://semolina.onrender.com/
 ## Getting Started
 
 1. Setup React

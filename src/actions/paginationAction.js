@@ -1,12 +1,13 @@
 import { paginationActionTypes } from "../actionTypes/paginationActionTypes";
 import { uiActionTypes } from "../actionTypes/uiActionTypes";
 import { userActionTypes } from "../actionTypes/userActionTypes";
-import axios from "axios";
+
+import { axiosInstance } from "../services/apiService";
 export const fetchUserPageChanged = (perPage) => {
   return async (dispatch) => {
     dispatch({ type: uiActionTypes.LOADING });
-    const response = await axios.get(
-      `${process.env.REACT_APP_API}?page=1&per_page=${perPage}`
+    const response = await axiosInstance.get(
+      `/users?page=1&per_page=${perPage}`
     );
 
     const data = response.data;
